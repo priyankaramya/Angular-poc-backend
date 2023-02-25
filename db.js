@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://admin:admin@cluster0.1a6krmm.mongodb.net/?retryWrites=true&w=majority', (err) => {
+mongoose.connect('mongodb+srv://admin:admin@cluster0.rbufb03.mongodb.net/Angular?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}, (err) => {
     if (!err)
         console.log('MongoDB connection succeeded.');
     else
